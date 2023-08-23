@@ -12,5 +12,8 @@ namespace Core.Entities
         public string ? NombrePersona {get; set;}
         public DateTime FechaNac {get; set;}
         public int IdTipoPer {get; set;}
+        public TipoPersona? TipoPersona {get;set;}
+        public ICollection<Producto>Productos {get;set;} = new HashSet<Producto>();
+        public ICollection<ProductoPersona>? ProductosPersonas {get;set;}
     }
 }

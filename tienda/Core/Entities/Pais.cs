@@ -10,5 +10,6 @@ namespace Core.Entities
     {
         public int Id {get; set;}
         public string ? NombrePais {get; set;}
+        public ICollection<Estado>? Estados {get;set;} 
     }
 }

@@ -14,5 +14,7 @@ namespace Core.Entities
         public int StockMax {get; set;}
         public int Stock { get; set; }
         public double ValorVta { get; set; }
+        public ICollection<ProductoPersona>? ProductosPersonas {get;set;}
+        public ICollection<Persona>Personas {get;set;} = new HashSet<Persona>();
     }
 }

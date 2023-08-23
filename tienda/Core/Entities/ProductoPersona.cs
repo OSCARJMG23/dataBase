@@ -7,7 +7,10 @@ namespace Core.Entities
 {
     public class ProductoPersona
     {
-        public int IdProducto {get; set;}
-        public int IdPersona { get; set; }
+        public int IdProductoFk {get; set;}
+        public Producto? Producto {get; set;}
+        public int IdPersonaFk { get; set; }
+        public Persona? Persona {get; set;}
+
     }
 }
